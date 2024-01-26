@@ -32,7 +32,8 @@ Currently i'm working on ubuntu and going to install AWS CLI on ubuntu using ter
   
 ### Recreate Logical Architecture
 
-![Cruddur Logical Architecture](assets/Cruddur Logical.png)
+![Cruddur Logical](https://github.com/tkirar/aws-bootcamp-cruddur-2023-tk/assets/69767391/26cbccfb-0e55-4ce4-97d6-f62cd8837898)
+
 
 
 
