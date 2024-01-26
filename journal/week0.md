@@ -26,6 +26,14 @@ Currently i'm working on ubuntu and going to install AWS CLI on ubuntu using ter
   aws sts get-caller-identity
  ```
 
+### Create a Budget
+- Created a zero Doller billing Alarm
+- Created a monthly Budget alarm of 10$
+  
+### Recreate Logical Architecture
+
+![Cruddur Logical Architecture](assets/Cruddur Logical.png)
+
 
 
   
