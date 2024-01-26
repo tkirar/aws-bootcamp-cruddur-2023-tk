@@ -7,7 +7,11 @@ Currently i'm working on ubuntu and going to install AWS CLI on ubuntu using ter
 ```sh
   apt install awscli
 ```
-- Configuring AWS Credentials and ACcess keys
+
+![AWS CLI Version](assets/Screenshot from 2024-01-27 01-15-15.png)
+
+
+- Configuring AWS Credentials and Access keys
  ```
   aws configure
  ```
@@ -24,7 +28,7 @@ Currently i'm working on ubuntu and going to install AWS CLI on ubuntu using ter
 
 
 
-  ![AWS CLI Version]()
+  
 
   
 
