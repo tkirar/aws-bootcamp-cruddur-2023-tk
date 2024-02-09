@@ -7,8 +7,8 @@ Currently i'm working on ubuntu and going to install AWS CLI on ubuntu using ter
 ```sh
   apt install awscli
 ```
+![Screenshot from 2024-01-27 01-15-15](https://github.com/tkirar/aws-bootcamp-cruddur-2023-tk/assets/69767391/39f844ab-dc1e-4bc5-b71e-cfe9d29d4085)
 
-![AWS CLI Version](assets/Screenshot from 2024-01-27 01-15-15.png)
 
 
 - Configuring AWS Credentials and Access keys
