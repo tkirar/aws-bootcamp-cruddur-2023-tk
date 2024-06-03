@@ -55,6 +55,14 @@ export AWS_DEFAULT_REGION=us-east-1
   aws sts get-caller-identity
  ```
 
+### Faced commit error on GITPOD
+
+while doing a commit through the left side commit button. It showed me that
+"You din't have permissions to push to the repository"
+
+- For this you need to open https://gitpod.io/access-control/ and give Gitpod permissions necessary to allow git push.
+- You can solve it manually by navigating to https://gitpod.io/access-control/ and allowing "write public repos".
+
 ### Create a Budget
 - Created a zero Doller billing Alarm
 - Created a monthly Budget alarm of 10$
