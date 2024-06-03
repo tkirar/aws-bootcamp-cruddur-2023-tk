@@ -1,21 +1,50 @@
 # Week 0 — Billing and Architecture
 
-## Install AWS CLI and ensure it works.
+### Install AWS CLI
 
-Currently i'm working on ubuntu and going to install AWS CLI on ubuntu using terminal.
-- Installed awscli using
+- We are going to install the AWS CLI when our Gitpod enviroment lanuches.
+- We are are going to set AWS CLI to use partial autoprompt mode to make it easier to debug CLI commands.
+- The bash commands we are using are the same as the [AWS CLI Install Instructions]https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html
+
+
+Update our `.gitpod.yml` to include the following task.
+
 ```sh
-  apt install awscli
+tasks:
+  - name: aws-cli
+    env:
+      AWS_CLI_AUTO_PROMPT: on-partial
+    init: |
+      cd /workspace
+      curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
+      unzip awscliv2.zip
+      sudo ./aws/install
+      cd $THEIA_WORKSPACE_ROOT
 ```
-![Screenshot from 2024-01-27 01-15-15](https://github.com/tkirar/aws-bootcamp-cruddur-2023-tk/assets/69767391/39f844ab-dc1e-4bc5-b71e-cfe9d29d4085)
+
+We'll also run these commands indivually to perform the install manually
 
 
 
-- Configuring AWS Credentials and Access keys
- ```
-  aws configure
- ```
- 
+### Create a new User and Generate AWS Credentials
+
+- Go to (IAM Users Console) create a new user. I created a new user AwsAdmin user for cli access.
+- `Enable console access` for the user
+- Create a new `Admin` Group and apply `AdministratorAccess`
+- Create the user and go find and click into the user
+- Click on `Security Credentials` and `Create Access Key`
+- Choose AWS CLI Access
+- Download the CSV with the credentials
+
+### Set Env Vars
+
+We will set these credentials for the current bash terminal
+```
+export AWS_ACCESS_KEY_ID=""
+export AWS_SECRET_ACCESS_KEY=""
+export AWS_DEFAULT_REGION=us-east-1
+```
+
 - Checking AWS Configured credentials
 ```
   aws configure list
