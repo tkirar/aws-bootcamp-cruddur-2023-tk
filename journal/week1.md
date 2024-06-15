@@ -12,7 +12,7 @@ python3 -m flask run --host=0.0.0.0 --port=4567
 ```
 
 - From ports check the server url
-- append /api/activities/home
+- append `/api/activities/home`
 - you should get back json
 
 ## Add Dockerfile
