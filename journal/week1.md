@@ -46,7 +46,7 @@ CMD [ "python3", "-m" ,"flask", "run", "--host=0.0.0.0", "--port=4567"]
 ## Build Container
 
 ```sh
-docekr build -t backend-flask ./backend-flask
+docker build -t backend-flask ./backend-flask
 ```
 
 ## RUN Container
